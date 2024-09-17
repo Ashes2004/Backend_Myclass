@@ -28,7 +28,7 @@ const app = express();
 
 
 admin.initializeApp({
-  credential: admin.credential.cert(process.env.FIREBASE_SERVICE_ACCOUN),
+  credential: admin.credential.cert(process.env.FIREBASE_SERVICE_ACCOUNT),
 });
 
 
