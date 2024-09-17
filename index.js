@@ -24,7 +24,7 @@ import resultRoutes from './routes/ResultRoutes.js'
 
 dotenv.config();
 
-
+const app = express();
 
 
 admin.initializeApp({
@@ -48,7 +48,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-const app = express();
+
 
 app.use(express.json());
 
