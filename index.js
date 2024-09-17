@@ -21,14 +21,14 @@ import alertRoutes from './routes/AlertTokenRoutes.js';
 import chatBotRoutes from './routes/ChatBot.js'
 import pollRoutes from './routes/pollRoutes.js';
 import resultRoutes from './routes/ResultRoutes.js'
-import serviceAccount from './myclass-6cf84-firebase-adminsdk-r71sl-388ebdf077.json' assert { type: "json" };
+
 dotenv.config();
 
 
 
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert(process.env.FIREBASE_SERVICE_ACCOUN),
 });
 
 
