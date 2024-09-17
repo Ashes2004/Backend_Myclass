@@ -48,7 +48,7 @@ admin.initializeApp({
 });
 
 
-const allowedOrigins = ['http://localhost:3000', 'https://my-class-sih.vercel.app/'];
+const allowedOrigins = ['https://my-class-sih.vercel.app' , 'http://localhost:3000'];
 
 const corsOptions = {
   origin: (origin, callback) => {
